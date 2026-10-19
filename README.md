@@ -28,7 +28,7 @@ UVM testbench for a 16-port packet router (1-bit serial inputs `din[15:0]`, `fra
 
 ## Run on EDA Playground
 
-**Link:** <paste your EDA Playground link here>
+**Link:** https://edaplayground.com/x/9LWW
 
 **Settings:** Testbench + Design = SystemVerilog/Verilog, **UVM / OVM = UVM 1.2**, simulator = Synopsys VCS / Cadence Xcelium / Aldec Riviera-PRO (a simulator with UVM support), top module = `router_test_top`. Tick **Open EPWave after run** to view waveforms.
 
@@ -37,9 +37,7 @@ UVM testbench for a 16-port packet router (1-bit serial inputs `din[15:0]`, `fra
 - If the simulator complains about a missing timescale, add `-timescale=1ns/1ps` to the compile options.
 
 ## Results
+<img width="1657" height="922" alt="image" src="https://github.com/user-attachments/assets/c67b8e27-b492-4c22-996c-23e7d9e44283" />
+<img width="1803" height="778" alt="image" src="https://github.com/user-attachments/assets/eaa07bbe-7a77-4ed1-a494-971f9725c7f2" />
 
-The log prints one line per packet in the form `[NOTE]<time> Packet #<n> Successfully compared coverage = <x>`, followed by `test completed: PASS=<n> FAIL=0 coverage=100.00` and `*** TEST PASSED ***`. Paste a screenshot of the log and the EPWave waveform here.
 
-![Simulation log](docs/log.png)
-
-![EPWave waveform](docs/waveform.png)
